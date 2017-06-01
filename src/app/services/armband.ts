@@ -20,4 +20,12 @@ export class ArmbandService {
     fromEvent(event) {
         return Observable.fromEvent(this.armband, event);
     }
+
+    swipeLeft$() {
+      return Observable.from(this.armband.on('wave_in'));
+    }
+
+    swipeRight$() {
+      return Observable.from(this.armband.on('wave_out'));
+    }
 }
