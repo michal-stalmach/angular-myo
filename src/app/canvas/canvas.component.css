@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  border: 1px outset black;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+:host .cursor {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: black;
+}
+
+:host canvas {
+  width: 100%;
+  height: 100%;
+}
